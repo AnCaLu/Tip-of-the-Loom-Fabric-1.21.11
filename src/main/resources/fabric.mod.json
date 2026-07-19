@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "tipoftheloom",
+	"version": "${version}",
+	"name": "Tip Of The Loom",
+	"description": "Adds tooltips to banner pattern buttons in the loom.",
+	"authors": [
+		"Darkhax",
+		"AnCaLu"
+	],
+	"contributors": [
+		"AnCaLu"
+	],
+	
+	"contact": {
+		"sources": "https://github.com/AnCaLu/Tip-of-the-Loom-Fabric-1.21.11"
+	},
+	"license": "LGPL-2.1-only",
+	"icon": "assets/tipoftheloom/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.darkhax.tipoftheloom.fabric.impl.FabricMod"
+		]
+	},
+	"mixins": [
+		"tipoftheloom.mixins.json",
+		{
+			"config": "tipoftheloom.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

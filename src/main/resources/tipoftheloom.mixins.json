@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.darkhax.tipoftheloom.common.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "MixinLoom"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
